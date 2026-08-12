@@ -1,0 +1,74 @@
+Rob’s Music Copier
+
+Rob’s Music Copier is a simple Windows utility for copying the music files referenced by an M3U or M3U8 playlist to another folder, USB drive, SD card, SSD, or other storage device.
+It can preserve the original music folder structure or place all songs into a single folder.
+
+Requirements
+  •  Windows 10 or Windows 11
+  •  An .m3u or .m3u8 playlist
+  •  Access to the music files referenced by the playlist
+  •  Enough free space at the destination for the selected music
+  •  No installation required
+The compiled .exe version does not require PowerShell knowledge or any additional software to use.
+
+How to Use
+  1.  Run Rob’s Music Copier.exe.
+  2.  Click Browse and select your .m3u or .m3u8 playlist.
+  3.  Select the Destination Folder.
+  4.  Choose a copy mode:
+    o  Preserve Folder Hierarchy — retains the directory structure of the original music library.
+    o  Flatten Into One Folder — places all selected music files into a single destination folder.
+  5.  When using Flatten mode, optionally select Prefix flattened files with playlist-order numbers. This creates filenames beginning with 001, 002, 003, etc., so the files remain in playlist order.
+  6.  Click Start Copy.
+  7.  Click Open Destination to view the copied music.
+
+Source Music Root
+When Preserve Folder Hierarchy is selected, Rob’s Music Copier attempts to determine the common source music folder automatically from the paths contained in the playlist.
+The detected location can be changed manually if necessary.
+Supported Music Files
+
+Rob’s Music Copier copies the files referenced by the playlist without converting or modifying them.
+Therefore, it can copy any media format referenced by the M3U playlist, including common formats such as:
+  •  MP3
+  •  M4A
+  •  AAC
+  •  FLAC
+  •  WAV
+  •  ALAC
+Playback compatibility depends on the device or software where the copied files will ultimately be used.
+Important
+
+Rob’s Music Copier copies files only.
+It does not delete, move, rename, convert, or modify the original music files.
+If a playlist references a file that cannot be found, the program reports the missing file and creates a MissingFiles.txt file in the destination when applicable.
+
+Duplicate Filenames
+When flattening a playlist into one folder, different songs can occasionally have identical filenames.
+Rob’s Music Copier detects these filename collisions and automatically creates a unique destination filename rather than overwriting an existing file.
+
+Network and External Drives
+Playlist entries may reference files stored on:
+  •  Internal drives
+  •  USB drives
+  •  External SSDs
+  •  Mapped network drives
+  •  Windows network shares
+The referenced drive or network location must be accessible when the copy is performed.
+
+Windows Security Warning
+Rob’s Music Copier may be distributed as an unsigned Windows executable.
+Because the application does not currently have a commercial code-signing certificate, Microsoft Defender SmartScreen may display a warning when the program is downloaded or run for the first time.
+Download the program only from the official distribution location.
+
+Support This Project
+Rob’s Music Copier is free to use.
+If you find it useful, the application includes an optional Support This Project button that opens PayPal in your default web browser.
+Supporting the project is completely optional and is not required to use any feature of the application.
+
+Privacy
+Rob’s Music Copier operates locally on your computer.
+The application does not require an account and does not collect or transmit your music, playlists, filenames, or personal information.
+Selecting Support This Project opens an external PayPal page in your web browser; any payment transaction is handled by PayPal, not by Rob’s Music Copier.
+Version
+Version 1.0
+Initial public release.
